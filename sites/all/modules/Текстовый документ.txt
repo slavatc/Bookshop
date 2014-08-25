@@ -1,0 +1,83 @@
+Re: Привет Муромец!
+От кого:	Ilia Dragan <di@inlead.dk> 
+Кому:	Вячеслав Ткаченко <slavatc@mail.ru>
+7 марта, 13:04
+Привет,
+
+вот на игнлише:
+Here is a test task that sounds more like a mini-project but covers the most important areas of Drupal
+and is more a site-building task (configuration + themeing)
+
+Business goal: create a site "On-line book catalog" with the following features:
+
+Book management
+Site editor (content manager) can add/update/delete books. Book is a content type with the following fields:
+-+ Title
+-+Description
+-+Cover (image)
+-+ Author
+-+ Year of publication
+-+ Category (like "Fiction, Sci-Fi, Scientific publications etc"), only one is allowed
+- Related books (link to another book on the site)
+- +External link (probably to electronic version, online book-store etc.)
+
+Site editor can manage "Book categories".
+
+Site features
+Site visitors can:
+-+ register themselves
+- +search for books using a search bar
+-+ login using a login box, logout
+- +view book details (includes accessing related books and external links from book view page)
+- +leave a review (comment on books content)
+- +rate a book
+-+ add to bookmarks
+- contact site administation
+
+Frontend details
+Frontpage contains
+- +login box (or logout link depending on the status)
+- +latest books - a box with a list of books that have been recently added
+
+Search results page contains:
+- +search form
+- list of books found, with covers, title and short description. Search result item lead to book view page
+
+Book view page contains:
+- Complete book information
+- Review/commenting boxes
+- List of the books from the same category (5 items, sorted by title)
+
+All of the pages contain:
+- search box
+- main menu that lists all of the book categories and allows to see all of the books from a category
+- secondary menu:
+ - About - page with a short info about the site
+ - Contact  - a page with contact form
+
+UX requirements
+There is no strict layout of site pages. It's up to you to find
+appropriate Drupal theme and decide on block positioning. Use your creativity and do not forget about
+usability certainly.
+
+Special requirements
+The site can be installed from modules with all of the structure exported using features module.
+Any page of the site (frontpage, search results, book view) should be easy to customize
+i.e. content block placement can be reorganized using panels module.
+
+As an additional task we could ask to:
+- create a browsebar-like widget (a carousel view of certain books) (check JS knowledge)
+- create a module that fetches book information from an online book database (http://isbndb.com/docs/api/) (check PHP/module development knowledge)
+
+Best Regards
+Ilia Dragan | Team Leader
+Inlead
+Strada Ismail 58/1 - 2001 Chisinau - Moldova
+www.inlead.dk | id@inlead.dk
+
+
+2014-03-06 22:33 GMT+02:00 Вячеслав Ткаченко <slavatc@mail.ru>:
+Я за тест-заданием по друпал:-)
+
+--
+Вячеслав Ткаченко

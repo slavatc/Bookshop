@@ -1,0 +1,4 @@
+name=module_node
+description=select from bd
+core=7.x
+package="primer_2"

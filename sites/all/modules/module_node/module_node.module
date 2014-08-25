@@ -1,0 +1,67 @@
+<?php
+
+//eta funkciea skaniruetsea kajdyi raz kogda drupalal hocet uznati kakie bloki esti v sisteme
+function module_node_block_info(){
+	$blocks['module_node_block']=array(
+
+	  'info'=>t('primer_2')
+	  
+	);
+
+	return $blocks;
+
+}
+/**
+$node=new stdClass();
+$node->type='page';
+$node->title='title';
+$node->language=LANGUAGE_NONE;
+$node->body[LANGUAGE_NONE]['value']='soderjanie';
+$node->body[LANGUAGE_NONE]['summary']='text';
+$node->body[LANGUAGE_NONE]['format']='full_html';
+$node->status=1;
+$node->promote=1;
+$node->sticky=0;
+$node->uid=3;
+
+*/
+function module_node_block_view($delta){
+      //   vivod informatii o node
+	  // uid - user id
+	  // nid - node id
+	  // tid - term id  
+
+	  
+	  
+	  $node = node_load(1);
+	  dsm($node);
+	  
+	  
+	  $block['subject']=t('menu');
+	 
+  	  
+      $block['content']=$node->title.="<br/>".$node->name.="<br/>".$node->uid.="<br/>".$node->vid.="<br/>".$node->type;
+	
+	  
+	  return $block;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

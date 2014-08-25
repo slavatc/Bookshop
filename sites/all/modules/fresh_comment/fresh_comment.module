@@ -1,0 +1,34 @@
+<?php
+
+function fresh_comment_block_info()
+{
+  $blocks['recent']
+  
+    ['info' ]= t('Recent comments');
+ $blocks['recent']
+    ['properties']
+  ['administrative']=TRUE;
+
+  return $blocks; 
+}
+function fresh_comment_block_view($delta = ''){
+
+if
+(user_access('access comments')){
+$block['subject']=t('Recent comments');
+$block['content']=theme('comment_block');
+return $block;
+}
+  }
+function fresh_comment_load_multiple($cids=array(),$conditions=array(),$reset=False){
+return entity_load('$comment','$cids',$conditions,$reset);
+
+
+}
+
+
+
+
+
+
+
