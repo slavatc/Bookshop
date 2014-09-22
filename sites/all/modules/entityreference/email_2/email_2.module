@@ -1,0 +1,37 @@
+<?php
+
+//eta funkciea skaniruetsea kajdyi raz kogda drupalal hocet uznati kakie bloki esti v sisteme
+function email_2_block_info(){
+	$blocks['email_2_block']=array(
+
+	  'info'=>t('admin')
+	  
+	);
+
+	return $blocks;
+
+}
+function email_2_block_view($delta){
+      
+	  $block['subject']=t('admin');
+	  
+	  $block['content']="
+<table>
+<tr>
+   
+ <td>slavtc@mail.ru</td>
+   
+</tr>
+
+
+</table>
+"
+
+.l('write to admin','mailto:slavtc@mail.ru',array('html'=>true));
+;
+
+
+
+	return $block;
+
+}

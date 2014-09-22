@@ -1,0 +1,42 @@
+<?php
+
+//eta funkciea skaniruetsea kajdyi raz kogda drupalal hocet uznati kakie bloki esti v sisteme
+function fresh_books_block_info(){
+$blocks['fresh_books_block']=array(
+
+  'info'=>t('assortiment')
+  
+);
+
+return $blocks;
+
+}
+function fresh_books_block_view($delta){
+
+$books=node_load_multiple(  array(),   array('type'=>'books')  );
+//dsm($books);
+//$nazvanie= l($book[1]->title  , '/node/'.$book[1]->nid ) ;
+
+//<?php
+$block['content']="<table>";
+//$nazvanie1=l($book[3]->title  ,'/node/'.$book[3]->nid);
+foreach($books as $nid=>$book){
+$block['content'].="<tr>";
+$block['content'].="<td>";
+//$block['content'].=$nid;
+$block['content'].=$book->title;
+$block['content'].="</td>";
+$block['content'].="</tr>";
+
+}
+$block['content'].="</table>";
+
+$block['subject']=t('books');
+
+
+
+
+
+
+return $block;
+}

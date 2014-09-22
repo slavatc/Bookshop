@@ -1,0 +1,4 @@
+name=email_2
+description=mail
+core=7.x
+package="admin"

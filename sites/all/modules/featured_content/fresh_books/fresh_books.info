@@ -1,0 +1,4 @@
+name=fresh_books
+description=assortiment
+core=7.x
+package="fresh_books"
